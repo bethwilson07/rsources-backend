@@ -8,10 +8,13 @@ class CoursesController < ApplicationController
     render json: Course.find(params[:id])
   end
 
-  def new
+  def create
+    render json: Course.create(course_params)
   end
 
-  def create
-  end
-  
+  private
+
+    def course_params
+      params.require(:course).permit(:name)
+    end
 end

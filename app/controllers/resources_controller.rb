@@ -8,14 +8,15 @@ class ResourcesController < ApplicationController
     render json: Resource.find(params[:id])
   end
 
-  def new
-  end
-
   def create
+    render json: Resource.create(resource_params)
   end
 
   def delete
   end
 
-  
+  private
+    def resource_params
+      params.require(:resource).permit(:resource_type, :name, :description, :photo)
+    end
 end
