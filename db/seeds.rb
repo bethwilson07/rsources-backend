@@ -5,7 +5,7 @@ user3 = User.create(username: "User 3")
 science = Subject.create(name: "Science", photo: "https://images.hindawi.com/images/social/JCHEM.jpg")
 tech = Subject.create(name: "Technology", photo: "https://scienceandtechnologytodayblog.files.wordpress.com/2017/03/the-importance-of-science-and-technology-fea.jpg?w=600")
 eng = Subject.create(name: "Engineering", photo: "https://yp6uap4od3sncuze-zippykid.netdna-ssl.com/wp-content/uploads/2016/04/Engineering-EDIWeekly.jpg")
-math = Subject.create(name: "Math", photo: "https://s18670.pcdn.co/wp-content/uploads/GettyImages-511947890-1.jpg")
+math = Subject.create(name: "Mathematics", photo: "https://s18670.pcdn.co/wp-content/uploads/GettyImages-511947890-1.jpg")
 
 chem = Course.create(name: "Chemistry", subject: science)
 bio = Course.create(name: "Biology", subject: science)
@@ -88,11 +88,11 @@ Resource.create(resource_type: "Review_Activity", name: "Whiteboard Race",
   shown earns a point for their team.",
   photo: "https://i.pinimg.com/originals/5b/3c/dc/5b3cdcc42a0a39e8a70d906abb0f6f1e.jpg", course: alg2, user: user2)
 Resource.create(resource_type: "Review Activity", name: "Scavenger Quiz", description: "Put 10 questions around the room
-  and make students find the question before they answer it on their paper. First students to bring all 10 written
+  and make students find the question before they answer it on their paper. First student to bring all 10 written
   correct answers gets a prize.",
   photo: "http://worldartsme.com/images/college-scavenger-hunt-clipart-1.jpg", course: alg1, user: user2)
 Resource.create(resource_type: "Review_Activity", name: "Scavenger Quiz", description: "Put 10 questions around the room
-  and make students find the question before they answer it on their paper. First students to bring all 10 written
+  and make students find the question before they answer it on their paper. First student to bring all 10 written
   correct answers gets a prize.",
   photo: "http://worldartsme.com/images/college-scavenger-hunt-clipart-1.jpg", course: alg2, user: user2)
 Resource.create(resource_type: "Website", name: "Matrix Algebra Resource" ,
