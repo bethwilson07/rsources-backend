@@ -40,11 +40,11 @@ Resource.create(resource_type: "Lab", name: "Chromatography Lab" , description: 
 Resource.create(resource_type: "Lab", name: "Acid-Base Titration Lab", description: "Given a known concentration of a base, determine
   the pH of an unknown acid using a buret and an indicator. Will need erlenmayer flasks, buret, acid & base solutions.",
   photo: "https://www.sciencesource.com/Doc/TR1_WATERMARKED/5/c/0/0/SS2824411.jpg?d63644876051", course: ap_chem, user: user3)
-Resource.create(resource_type: "Review Activity", name: "Scavenger Quiz", description: "Put 10 questions around the room
+Resource.create(resource_type: "Review_Activity", name: "Scavenger Quiz", description: "Put 10 questions around the room
   and make students find the question before they answer it on their paper. First students to bring all 10 written
   correct answers gets a prize.",
   photo: "http://worldartsme.com/images/college-scavenger-hunt-clipart-1.jpg", course: chem, user: user1)
-Resource.create(resource_type: "Review Activity", name: "Jeopardy", description: "Create questions and answers and assign
+Resource.create(resource_type: "Review_Activity", name: "Jeopardy", description: "Create questions and answers and assign
   point values to each question. Break students up into teams and have some non-chaotic way for them to signal
   that they want to answer the question when it is read. First team to signal gets to answer the question. If
   incorrect, one other team gets to try to answer and steal the points. If the second team fails,
@@ -61,9 +61,9 @@ Resource.create(resource_type: "Website", name: "Weak Acid Base Equilibria" , de
   "https://www.khanacademy.org/science/chemistry/acids-and-bases-topic/copy-of-acid-base-equilibria/a/weak-acid-base-equilibria",
   photo: "https://cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/000/457/original/khan-logo_clear-bg.jpg?1534963954",
    course: chem, user: user1)
-Resource.create(resource_type: "Field Trip Idea", name: "Natural History Museum --Gem Exhibit" , description: "Molecular Structure",
+Resource.create(resource_type: "Field_Trip_Idea", name: "Natural History Museum --Gem Exhibit" , description: "Molecular Structure",
   photo: "https://i.ytimg.com/vi/QV-SvNMW4QQ/maxresdefault.jpg", course: chem, user: user1)
-Resource.create(resource_type: "Field Trip Idea", name: "NIST Fieldtrip", description: "Explore the importance of having standards of measurement.",
+Resource.create(resource_type: "Field_Trip_Idea", name: "NIST Fieldtrip", description: "Explore the importance of having standards of measurement.",
   photo: "https://www.nist.gov/sites/default/files/styles/480_x_480_limit/public/images/2017/01/04/nist_fbi_joint.jpg?itok=p9ME_Bb1",
   course: chem, user: user1)
 Resource.create(resource_type: "Project", name: "Make A Volatic Cell", description: "Will need potassium nitrate, copper metal, zinc metal,
@@ -77,12 +77,12 @@ Resource.create(resource_type: "Project", name: "Mobile Elements",
   and diagram of its atom.", photo: "https://newvillagecharter.digication.com/files/M496c2bb58bdc3.JPG",
   course: chem, user: user1)
 
-Resource.create(resource_type: "Review Activity", name: "Whiteboard Race",
+Resource.create(resource_type: "Review_Activity", name: "Whiteboard Race",
   description: "Prepare some math problems. Have 2 teams of students in two single file lines facing the board.
   Write the problem on the board and say, Go. First team member to get problem correct on the board with work
   shown earns a point for their team.",
   photo: "https://i.pinimg.com/originals/5b/3c/dc/5b3cdcc42a0a39e8a70d906abb0f6f1e.jpg", course: alg1, user: user2)
-Resource.create(resource_type: "Review Activity", name: "Whiteboard Race",
+Resource.create(resource_type: "Review_Activity", name: "Whiteboard Race",
   description: "Prepare some math problems. Have 2 teams of students in two single file lines facing the board.
   Write the problem on the board and say, Go. First team member to get problem correct on the board with work
   shown earns a point for their team.",
@@ -91,7 +91,7 @@ Resource.create(resource_type: "Review Activity", name: "Scavenger Quiz", descri
   and make students find the question before they answer it on their paper. First students to bring all 10 written
   correct answers gets a prize.",
   photo: "http://worldartsme.com/images/college-scavenger-hunt-clipart-1.jpg", course: alg1, user: user2)
-Resource.create(resource_type: "Review Activity", name: "Scavenger Quiz", description: "Put 10 questions around the room
+Resource.create(resource_type: "Review_Activity", name: "Scavenger Quiz", description: "Put 10 questions around the room
   and make students find the question before they answer it on their paper. First students to bring all 10 written
   correct answers gets a prize.",
   photo: "http://worldartsme.com/images/college-scavenger-hunt-clipart-1.jpg", course: alg2, user: user2)
