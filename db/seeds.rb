@@ -1,6 +1,6 @@
-user1 = User.create(username: "User 1")
-user2 = User.create(username: "User 2")
-user3 = User.create(username: "User 3")
+user1 = User.create(username: "User_1", password: "password1")
+user2 = User.create(username: "User_2", password: "password2")
+user3 = User.create(username: "User_3", password: "password3")
 
 science = Subject.create(name: "Science", photo: "https://images.hindawi.com/images/social/JCHEM.jpg")
 tech = Subject.create(name: "Technology", photo: "https://scienceandtechnologytodayblog.files.wordpress.com/2017/03/the-importance-of-science-and-technology-fea.jpg?w=600")
