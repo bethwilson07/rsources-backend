@@ -12,7 +12,13 @@ class ResourcesController < ApplicationController
     render json: Resource.create(resource_params)
   end
 
-  def delete
+  def update
+    Resource.find(params[:id]).update(resource_params)
+    render json: Resource.find(params[:id])
+  end
+
+  def destroy
+    render json: Resource.find(params[:id]).destroy
   end
 
   private
