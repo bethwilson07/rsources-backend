@@ -107,13 +107,20 @@ Resource.create(resource_type: "Website", name: "Factoring Patterns" , descripti
   photo: "https://www.humbleisd.net/cms/lib/TX01001414/Centricity/Domain/9989/factoring%20special%20polynomials.gif",
   course: alg1, user: user2)
 
-Post.create(content: "Does anyone have any ideas for 11th grade Chemistry field trip?
+ch1 = Post.create(content: "Does anyone have any ideas for 11th grade Chemistry field trip?
   I have a bunch of rambunctious students and am worried about taking them on a field trip.", course: chem, user: user1)
-Post.create(content: "Does anyone have any ideas for 9th grade Algebra 1 field trip?
+al1 = Post.create(content: "Does anyone have any ideas for 9th grade Algebra 1 field trip?
   I have a bunch of rambunctious students and am worried about taking them on a field trip.", course: alg1, user: user1)
-Post.create(content: "Does anyone have any ideas for 10th grade Biology field trip?
+bio1= Post.create(content: "Does anyone have any ideas for 10th grade Biology field trip?
   I have a bunch of rambunctious students and am worried about taking them on a field trip.", course: bio, user: user3)
-Post.create(content: "Does anyone have any ideas for 12th grade Physics field trip?
+ph1 = Post.create(content: "Does anyone have any ideas for 12th grade Physics field trip?
   I have a bunch of bored students and need to spice up my curriculum.", course: phys, user: user3)
-Post.create(content: "Does anyone have any ideas for 11th grade AP Chem field trip?
+ac1 = Post.create(content: "Does anyone have any ideas for 11th grade AP Chem field trip?
   I have a bunch of terrified and stressed out students and need to show them chemistry is not the worst.", course: ap_chem, user: user2)
+
+Comment.create(content: "Take them outside and do some demonstrations.", post: ch1, user: user2)
+Comment.create(content: "Are there any textile, plastics, or food labs or plants in your community?
+  You could take them there and show them chemistry in action.", post: ch1, user: user3)
+Comment.create(content: "Bio is cool.", post: bio1, user: user3)
+Comment.create(content: "Mitosis", post: bio1, user: user2)
+Comment.create(content: "Math fieldtrips require some thought.", post: al1, user: user3)
