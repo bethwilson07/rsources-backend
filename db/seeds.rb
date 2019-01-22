@@ -4,7 +4,7 @@ user3 = User.create(username: "User_3", password: "password3")
 
 science = Subject.create(name: "Science", photo: "https://images.hindawi.com/images/social/JCHEM.jpg")
 tech = Subject.create(name: "Technology", photo: "https://scienceandtechnologytodayblog.files.wordpress.com/2017/03/the-importance-of-science-and-technology-fea.jpg?w=600")
-eng = Subject.create(name: "Engineering", photo: "https://yp6uap4od3sncuze-zippykid.netdna-ssl.com/wp-content/uploads/2016/04/Engineering-EDIWeekly.jpg")
+eng = Subject.create(name: "Engineering", photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOZCrFut-gKXUz_Ndn-fHiss2QJvks_UWtQ2h54KPrwdBR_Wvf")
 math = Subject.create(name: "Mathematics", photo: "https://s18670.pcdn.co/wp-content/uploads/GettyImages-511947890-1.jpg")
 
 chem = Course.create(name: "Chemistry", subject: science)

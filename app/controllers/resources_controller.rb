@@ -13,7 +13,9 @@ class ResourcesController < ApplicationController
   end
 
   def update
-    Resource.find(params[:id]).update(resource_params)
+    @resource = Resource.find(params[:id])
+    @resource.update(resource_params)
+    update_document
     render json: Resource.find(params[:id])
   end
 
@@ -23,6 +25,14 @@ class ResourcesController < ApplicationController
 
   private
     def resource_params
-      params.require(:resource).permit(:resource_type, :name, :description, :photo, :course_id, :user_id)
+      params.require(:resource).permit(:resource_type, :name, :description, :photo, :course_id, :user_id,
+        :document)
+    end
+
+    def update_document
+      if params[:document]
+       @resource.document.purge
+       @resource.document.attach(params[:document])
+      end
     end
 end
