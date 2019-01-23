@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-
   #check the token sent to us by the client, return the user object that token represents
 
   def profile
