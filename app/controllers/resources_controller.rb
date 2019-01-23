@@ -10,13 +10,13 @@ class ResourcesController < ApplicationController
 
   def create
     @resource = Resource.create(resource_params)
-    @resource.documents.attach(params[:resource][:documents])
+    # @resource.documents.attach(params[:resource][:documents])
     render json: @resource
   end
 
   def update
     Resource.find(params[:id]).update(resource_params)
-    Resource.find(params[:id]).attach(params[:resource][:documents])
+    # Resource.find(params[:id]).attach(params[:resource][:documents])
     render json: Resource.find(params[:id])
   end
 
