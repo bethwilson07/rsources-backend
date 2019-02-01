@@ -1,11 +1,11 @@
-user1 = User.create(username: "User_1", password: "password1")
-user2 = User.create(username: "User_2", password: "password2")
-user3 = User.create(username: "User_3", password: "password3")
+user1 = User.create(username: "ChemTeachR101", password: "password1")
+user2 = User.create(username: "BioBuff", password: "password2")
+user3 = User.create(username: "MathProf3", password: "password3")
 
-science = Subject.create(name: "Science", photo: "https://images.hindawi.com/images/social/JCHEM.jpg")
+science = Subject.create(name: "Science", photo: "https://i.pinimg.com/originals/01/67/e9/0167e9df8103435b37b166aea72d57b3.jpg")
 tech = Subject.create(name: "Technology", photo: "https://scienceandtechnologytodayblog.files.wordpress.com/2017/03/the-importance-of-science-and-technology-fea.jpg?w=600")
 eng = Subject.create(name: "Engineering", photo: "https://yp6uap4od3sncuze-zippykid.netdna-ssl.com/wp-content/uploads/2016/04/Engineering-EDIWeekly.jpg")
-math = Subject.create(name: "Mathematics", photo: "https://s18670.pcdn.co/wp-content/uploads/GettyImages-511947890-1.jpg")
+math = Subject.create(name: "Mathematics", photo: "http://media.therakyatpost.com/wp-content/uploads/2015/10/bigstock-Maths-formulas-on-chalkboard-b-88875161.jpg")
 
 chem = Course.create(name: "Chemistry", subject: science)
 bio = Course.create(name: "Biology", subject: science)
@@ -30,6 +30,25 @@ trig = Course.create(name: "Trigonometry", subject: math)
 precalc = Course.create(name: "PreCalculus", subject: math)
 ap_calc1 = Course.create(name: "AP Calculus", subject: math)
 
+Resource.create(resource_type: "Project", name: "Make Silly Putty",
+  description: "Ingredients:  Elmer's Glue, liquid starch (or Borax), food coloring
+It's a non-Newtonian fluid/colloidal substance. Polymers held together by covalent bonds and hydrogen bonds between the molecules give it it's properties.
+https://www.thoughtco.com/silly-putty-history-and-chemistry-606806", photo: "http://1.bp.blogspot.com/-mQUa6G72e9U/UBAnZOu4EbI/AAAAAAAAAFU/EQlAFDGYcjs/s1600/P1030042.JPG",
+  course: chem, user: user1)
+Resource.create(resource_type: "Website", name: "Chemistry Science Projects" , description:
+    "This is a great website that gives multiple ideas for chemistry projects. You can sort by difficulty!
+website: https://www.sciencebuddies.org",
+    photo: "https://venturebeat.com/wp-content/uploads/2017/07/kahoot.png?fit=1132%2C601&strip=all",
+    course: chem, user: user1)
+Resource.create(resource_type: "Website", name: "Crash Course Chemistry" , description:
+      "This is one of the most helpful chemistry YouTube channels. I have shown my students many of Hank's videos and he's an engaging speaker.
+website: https://www.youtube.com/playlist?list=PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr",
+      photo: "https://jameskennedymonash.files.wordpress.com/2014/04/crash-course-chemistry.jpg",
+      course: chem, user: user1)
+Resource.create(resource_type: "Project", name: "Rate of Chem Rxn",
+  description: "Test out the relative rates of reaction for varying amounts of solid material surface area.
+Ingredients: Alka seltzer tablets, HCl/Muriatic Acid", photo: "https://alkaseltzer.com/static/media/images/3tablets.png",
+  course: chem, user: user1)
 Resource.create(resource_type: "Lab", name: "Stoich S'mores Lab" , description: "Use ingredients for smores to
   illustrate the concepts of stoichiometry. Make a smore as reward for finishing worksheet.",
   photo: "https://foodsogoodmall.com/wp-content/uploads/2013/08/Smores.jpg", course: chem, user: user1)
@@ -58,6 +77,9 @@ Resource.create(resource_type: "Review_Activity", name: "Jeopardy", description:
   question at the end to serve as a tie-breaker.",
   photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Jeopardy_game_board.png/255px-Jeopardy_game_board.png",
   course: chem, user: user1)
+  Resource.create(resource_type: "Field_Trip_Idea", name: "Recycling Center", description: "https://www.montgomerycountymd.gov/sws/facilities/rc/tours.html",
+    photo: "https://vignette.wikia.nocookie.net/scribblenauts/images/b/b7/Recycling_Plant.png/revision/latest?cb=20130303133509",
+    course: chem, user: user1)
 Resource.create(resource_type: "Website", name: "Kahoot Thermo 2 Quiz" , description:
   "https://play.kahoot.it/#/k/5488194d-24ce-43a9-b214-3f546f482779",
   photo: "https://venturebeat.com/wp-content/uploads/2017/07/kahoot.png?fit=1132%2C601&strip=all",
