@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-gem "rack", ">= 2.0.8"
+
 ruby '2.3.3'
 gem 'active_model_serializers', '~> 0.10.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -19,8 +19,6 @@ gem 'jwt', '~> 2.1'
 
 # Use ActiveStorage variant
 gem "mini_magick", ">= 4.9.4"
-gem "nokogiri", ">= 1.10.4"
-gem "loofah", ">= 2.3.1"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
